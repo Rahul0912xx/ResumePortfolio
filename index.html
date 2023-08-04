@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Resume Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Portfolio</h1>
+        <form>
+            <h2>PERSONAL INFORMATION</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" onchange="calculateAge()" required>
+            <p>Age: <span id="ageValue"></span></p>
+            <label for="gender">Gender:</label>
+            <select id="gender" required>
+                <option value="" disabled selected>Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <label for="address">Address:</label>
+            <textarea id="address" required></textarea>
+            <h2>EDUCATIONAL QUALIFICATIONS</h2>
+            <label for="graduation">College:</label>
+            <input type="text" id="graduation" placeholder="College Name">
+            <input type="number" id="percentage" placeholder="percentage">
+            <label for="Degree"></label>Degree:
+            <input type="text" id="Degree" placeholder="Btech, Mtech, Bba, etc.">
+            <label for="school">School:</label>
+            <input type="text" id="school" placeholder="School Name">
+            <input type="number" id="percent" placeholder="percentage">
+            <h2>ADDITIONAL INFORMATION</h2>
+            <label for="skills">Skills:</label>
+            <textarea id="skills" cols="30" rows="10" placeholder="Add your skills"></textarea>
+            <label for="projects">Projects:</label>
+            <textarea id="projects" cols="30" rows="10" placeholder="Add your projects"></textarea>
+            <label for="Achievements">Achievements:</label>
+            <textarea id="Achievements" cols="30" rows="10" placeholder="Achievements"></textarea>
+
+            <h2>UPLOAD PHOTOGRAPH</h2>
+            <label for="photo">Upload Recent Photograph:</label>
+            <input type="file" id="photo" accept="image/*" required>
+
+            <button type="submit">submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
